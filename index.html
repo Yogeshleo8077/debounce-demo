@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Debounced Search Demo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 40px auto;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .search-box {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+      }
+
+      .result {
+        padding: 8px;
+        border: 1px solid #ccc;
+        min-height: 40px;
+      }
+
+      .product {
+        padding: 4px 0;
+        border-bottom: 1px solid #eee;
+      }
+
+      .log {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Debounced Product Search</h1>
+    <p>Start typing to search products (debounce: 500ms)</p>
+
+    <input
+      type="text"
+      id="searchInput"
+      class="search-box"
+      placeholder="Search products..."
+    />
+
+    <div id="results" class="result"></div>
+
+    <div class="log">
+      <strong>Console log:</strong> Open DevTools (F12) and check “Console” to
+      see how many times the search function is actually called.
+    </div>
+
+    <!-- JS file linked here -->
+    <script src="app.js"></script>
+  </body>
+</html>
